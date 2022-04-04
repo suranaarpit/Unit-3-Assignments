@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<style>
+  #main{
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    /* position: absolute;
+    top: 50px;
+    left: 300px; */
+}
+#blog{
+    border: 1px solid black;
+    display: flex;
+    padding: 15px;
+}
+.title{
+    border: 1px solid black;
+    width: fit-content;
+    height: 200px;
+}
+.title>p{
+    font-size: 16px;
+    cursor: pointer;
+}
+.desc{
+    
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.poster{
+    
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+}
+.poster>img{
+    width: 500px;
+    height: 200px;
+}
+.divBox{
+    border: 1px solid black;
+}
+#conImg{
+    width: 500px;
+    height: 300px;
+}
+#main>div>div{
+    border: 1px solid black;
+    padding: 15px;
+}
+</style>
+  </head>
+
+  <body>
+    <div id="main">
+      <!--No need to add sidebar here, directly display search results here only-->
+
+      <!-- show headline, description and image -->
+    </div>
+  </body>
+</html>
+<script type="module">
+
+import { apiCall, appendArticles } from "./scripts/main.js"
+// console.log('apiCall, appendArticles:', apiCall, appendArticles)
+
+let main = document.getElementById("main")
+
+let input = localStorage.getItem("search_term");
+let url = `https://blog-search-u3c4.herokuapp.com/api/search/?q=${input}`
+let data = await apiCall(url);
+appendArticles(data, main);
+//https://blog-search-u3c4.herokuapp.com/api/search/?q=[search_term]
+
+
+</script>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McDonald's</title>
+    <link rel="shortcut icon" href="./redketchup/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./redketchup/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./redketchup/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./redketchup/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./redketchup/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="./xDGQ9dbLmMpeEqhiWayMRB-removebg-preview.png" alt="">
+        <h1>Welcome to <span>McDonald's</span> virtual restaurent</h1>
+      </div>
+      <div id="food">
+        <h2>McDonald's Menu</h2>
+        <form id="form">
+            <input
+              class="check"
+              type="checkbox"
+              id="fries"
+              name="fries"
+              value="fries"
+            />
+            <label for="fries"> Fries</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="burger"
+              name="burger"
+              value="burger"
+            />
+            <label for="burger"> Burger</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="nuggets"
+              name="nuggets"
+              value="nuggets"
+            />
+            <label for="nuggets"> Veg Nuggets</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="coffee"
+              name="coffee"
+              value="coffee"
+            />
+            <label for="coffee">Coffee</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="coke"
+              name="coke"
+              value="coke"
+            />
+            <label for="coke"> Coke</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="sandwich"
+              name="sandwich"
+              value="sandwich"
+            />
+            <label for="sandwich">Sandwich</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="cake"
+              name="cake"
+              value="cake"
+            />
+            <label for="cake">Pan Cakes</label><br />
+            <input
+              class="check"
+              type="checkbox"
+              id="oat"
+              name="oat"
+              value="oat"
+            />
+            <label for="oat">Fruit & Mapple Oatmeal</label><br />
+
+          <input id="btn" type="submit" value="Order Food" />
+        </form>
+      </div>
+      <div class="success"></div>
+      <div class="items"></div>
+      <div class="reject"></div>
+      <marquee direction="top"
+      ><span>Note:</span> We are not serving at night.</marquee
+    >
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

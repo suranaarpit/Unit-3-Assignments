@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINI JS LEARNING APP</title>
+    <!-- favicon -->
+<link rel="shortcut icon" href="/redketchup/android-chrome-192x192.png" type="image/x-icon">
+<link rel="shortcut icon" href="/redketchup/android-chrome-512x512.png" type="image/x-icon">
+<link rel="shortcut icon" href="/redketchup/apple-touch-icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/redketchup/favicon-16x16.png" type="image/x-icon">
+<link rel="shortcut icon" href="/redketchup/favicon-32x32.png" type="image/x-icon">
+<link rel="shortcut icon" href="/redketchup/favicon.ico" type="image/x-icon">
+
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+      body{
+        background-color: black;
+      }
+      .head{
+        color: red;
+        text-align: center;
+        font-size: 45px;
+        font-family: 'Varela Round';
+        font-weight: bolder;
+        background-color: antiquewhite;
+      }
+      .head:hover{
+        color: green;
+      }
+      
+      #buttons{
+        /* border: 1px solid black; */
+        height: 100px;
+        width: 660px;
+        margin: auto;
+        margin-top: 60px;
+      }
+      #buttons>button{
+        width: 160px;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-family: 'Varela Round';
+        font-size: 13px;
+        font-weight: bolder;
+        color: white;
+        background-color: crimson;
+        border-radius: 8px;
+      }
+      #buttons>button:hover{
+        background-color: antiquewhite;
+        color: black;
+      }
+      #infoBox{
+        border: 8px solid green;
+        height: 25vh;
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        border-radius: 55px;
+        background-color: rgb(191, 218, 175);
+      }
+      #infoBox:hover{
+        border: 8px solid darkblue;
+        background-color: rgb(174, 175, 216);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html"><p class="head"><u>MINI JS LEARNING APP</u></p></a>
+    
+    <div id="buttons">
+      <!--Create buttons namely “Scope”, “Hoisting”, ‘Constructor Functions’, ‘Prototype’ in index.html. Each button will have it's respective name as HTML id. For e.g Scope button will HTML id as "scope". ( Note: no capital letter in id )-->
+      <button id="scope">Scope</button>
+      <button id="hoisting" >Hoisting</button>
+      <button id="constructor_functions">Constructor Functions</button>
+      <button id="prototype">Prototype</button>
+    </div>
+    <div id = "infoBox">
+
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>

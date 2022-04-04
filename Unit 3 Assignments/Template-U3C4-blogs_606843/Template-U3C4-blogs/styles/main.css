@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#sidebar{
+    border: 1px solid black;
+    padding: 15px;
+    width: fit-content;
+}
+#sidebar>div{
+    border: 1px solid black;
+    width: 250px;
+    height: 500px;
+}
+.blogtext{
+    border: 1px solid black;
+}
+.blogtext>p{
+font-size: 35px;
+font-weight: bold;
+text-align: center;
+}
+.login{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.login>p{
+    font-size: 17px;
+}
+.searchbox{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+#searchbar{
+    height: 30px;
+    width: 200px;
+}
+.sametext{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.sametext>p{
+    font-size: 17px;
+}
+#main{
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+#blog{
+    border: 1px solid black;
+    display: flex;
+    padding: 15px;
+}
+.title{
+    border: 1px solid black;
+    width: fit-content;
+    height: 200px;
+}
+.title>p{
+    font-size: 16px;
+    cursor: pointer;
+}
+.desc{
+    
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.poster{
+    
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+}
+.poster>img{
+    width: 500px;
+    height: 200px;
+}
+.divBox{
+    border: 1px solid black;
+}
+#conImg{
+    width: 500px;
+    height: 300px;
+}
+#main>div>div{
+    border: 1px solid black;
+    padding: 15px;
+}

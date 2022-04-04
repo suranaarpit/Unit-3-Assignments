@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student mangement system</title>
+    <style>
+     
+     
+        #table{
+            width: 50%;
+            height: 100%;
+            border: 1px solid white;
+        }
+tr{
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr  {
+  background-color: white;
+  color: black;
+}
+   h1 {
+       color: coral;
+       margin-left: 15%;
+   }
+   h3 {
+       margin-bottom: 5px;
+   }
+   select {
+         width: 80%;
+         padding: 10px 15px;
+         border: 1px solid rgb(150, 150, 156);
+         border-radius: 4px;
+         background-color: white;
+      }
+      input{
+        width: 71%;
+         padding: 10px 15px;
+         border: 1px solid  rgb(150, 150, 156);
+         border-radius: 4px;
+         background-color: white;
+      }
+  
+         
+      thead {
+	background-color: rgb(58, 56, 56);
+	color: black;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+    
+}
+
+      
+    </style>
+</head>
+<body>
+    
+        <div id="table">
+            <h1>Student Info</h1>
+            <hr style="width:80%; margin-left: 15%;">
+            <table id="ta">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Citty</th>
+                    </tr>
+                </thead>
+                <tbody id="body">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  var  student=JSON.parse(localStorage.getItem("student")) || [];
+    
+     function Print(student){
+         document.querySelector("#body").innerHTML=null;
+        student.map(function (elem, index){
+            var c=1;
+
+         var row= document.createElement("tr");
+         var col1 = document.createElement("td");
+        col1.innerText =index+1;
+        var col2 = document.createElement("td");
+          col2.innerText = elem.name;
+         var col3= document.createElement("td");
+           col3.innerText = elem.number;
+           var col4 = document.createElement("td");
+           col4.innerText = elem.city;
+          
+           row.append(col1,col2,col3,col4);
+           document.querySelector("#body").append(row);
+          
+})
+     }
+
+Print(student);
+
+</script>

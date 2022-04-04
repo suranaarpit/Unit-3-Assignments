@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Array Constructor</title>
+</head>
+<body>
+
+    <label for="custom_array"><h2>Custom Array Constructor</h2></label>
+
+</body>
+</html>
+<script>
+  
+    function customArray() {
+
+      Object.defineProperty(this, "length",{
+
+        value: 0, 
+        writable: true, 
+        enumerable: false,
+
+      });
+      
+      for (let i=0;i<arguments.length;i++)
+      {
+          this[i]=arguments[i];
+      }
+  
+      this.length=arguments.length;
+
+    }
+  
+    customArray.prototype.push = function (value){
+
+      let index = this.length;
+      this[index] = value;
+      this.length++;
+
+    }
+
+    customArray.prototype.reverse = function () {
+
+      let index = this.length-1;
+      let arr=[]
+      for (var i=index;i>=0;i--)
+      
+      {
+        arr.push(this[i]);
+      }
+      return arr;
+
+    }
+  
+    let Array = new customArray("a", "b", "c","d","e");
+  
+   Array.push("g");
+   Array.push("h");
+  
+   console.log(Array.reverse());
+   
+   console.log("Custom Array is:", Object.values(Array));
+  
+  
+  </script>
+  
