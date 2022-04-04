@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT - Search</title>
+    <style>
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+<h1>YouTube</h1>
+
+<input type="text" id="search">
+<button onclick="searchVideos()">Search</button>
+
+<div id="search_results"></div>
+
+
+</body>
+</html>
+<script>
+
+// 1) YouTube API - Reading Documanatation
+
+// 2) Array of Objects
+
+// 3) Append()
+
+// Find the Url
+
+// GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=football&key=[YOUR_API_KEY]
+
+// API_KEY - AIzaSyAn7401GGpKDkmFd3pLfy2GGFpFcidR-ig
+
+const search_results_div = document.getElementById("search_results");
+
+const searchVideos = async ()=>{
+
+try{
+
+let inp = document.getElementById("search").value
+
+
+let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${inp}&key=AIzaSyAn7401GGpKDkmFd3pLfy2GGFpFcidR-ig&maxResults=50`)
+
+let data = await res.json()
+
+let videos = data.items
+
+// console.log('videos:', videos)
+
+
+
+}
+
+catch(err){
+
+    console.log('err:', err)
+
+}
+
+};
+
+//possible mistakes 
+//1. async await not in pair
+//2. https
+//3. res.json()
+//4. seprate para using &
+//5. wrong destination
+//6. spelling mistakes
+
+
+
+
+
+
+
+
+
+//embed => adding something
+
+// do u want to add a video to your app?
+
+// i want to embed my video
+
+//embed url => https://www.youtube.com/embed/EVn9EbMdo_A
+
+
+
+</script>

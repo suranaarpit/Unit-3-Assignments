@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 32, 32);
+    font-family: "Roboto";
+    color: white;
+}
+
+i{
+    color: white;
+}
+
+#nav{
+    /* border: 1px solid white; */
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+#line{
+    /* border: 1px solid white; */
+    width: 20px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+#img{
+    /* border: 1px solid white; */
+    padding: 4px;
+}
+#searchbar{
+    /* border: 1px solid white; */
+    width: 550px;
+    height: 65px;
+    margin-left: 190px;
+}
+#search{
+    width: 550px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 7px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+#search:focus{
+    outline: 1px solid rgb(0, 115, 255)
+}
+#searchbtn{
+/* border: 1px solid white; */
+width: 70px;
+height: 65px;
+}
+#searchbtn>button>i{
+    color: white;
+    font-size: 30px;
+    background-color: rgb(69, 67, 67)
+}
+#searchbtn>button{
+    width: 70px;
+    height: 50px;
+    margin-top: 7px;
+    border: none;
+    background-color: rgb(69, 67, 67);
+    cursor: pointer;
+}
+
+#divinnav{
+    /* border: 1px solid red; */
+    margin-left: 190px;
+    width: 250px;
+    display: flex;
+}
+.icons{
+    /* border: 1px solid white; */
+    width: 50px;
+    margin-left: 20px;
+}
+#profile{
+    /* border: 1px solid white; */
+    width: 60px;
+    border-radius: 50px;
+}
+.icons>i{
+    color:  white;
+}
+#videoCall{
+    padding: 15px
+}
+
+#noti{
+    padding: 15px;
+}
+#grid{
+    padding: 15px;
+}
+#profile>img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#iframediv{
+    /* border: 1px solid white; */
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 65px;
+}
+
+#iframediv>div>iframe{
+
+    width: 997px;
+    height: 500px;
+    border: none;
+}
+
+#box{
+    /* border: 1px solid white; */
+    height: 130px;
+    width: 1000px;
+    margin: auto;
+}
+#titlediv{
+    /* border: 1px solid white; */
+    height: 60px;
+}
+#titlediv>div{
+/* border: 1px solid white; */
+margin-top: 10px;
+
+}
+
+#titlediv>div>h3{
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 10px;
+}
+
+#like_dislike{
+    /* border: 1px solid crimson; */
+    height: 65px;
+    width: 500px;
+    margin-left: 650px;
+}
+
+#like_dislike>img{
+    height: 60px;
+    width: 360px;
+}
+
+#channeldetails{
+    border: 1px solid white;
+    height: 100px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: grey;
+}
+#channelLogo{
+    border: 1px solid white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+#titlename{
+    /* border: 1px solid white; */
+    width: 300px;
+    margin-left: 15px;
+}
+#titlename>div{
+    /* border: 1px solid white; */
+    margin-top: 30px;
+}
+#titlename>div>h5{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+
+}
+#subscribe{
+    /* border: 1px solid white; */
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+#subscribe{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}

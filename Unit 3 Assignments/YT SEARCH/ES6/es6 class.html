@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 Class</h1>
+</body>
+</html>
+<script>
+
+// function Person(n, a){
+//     this.name = n;
+//     this.age = a;
+//     this.showName = () =>{
+
+//         console.log(this.name);
+//     }
+// }
+// var p1 = new Person("MSD", 7);
+
+// const person = {
+//     x: "MSD",
+//     showName: () =>{
+//         console.log(this.x);
+//     }
+// };
+// var p1 = new Person("MSD", 7)
+// person.showName();
+
+
+// class Person{
+
+// constructor(n, a, b){
+//     this.player_name = n
+//     this.jersey_number = a
+//     this.country = b
+// }
+// showName(){
+//     console.log("Player Name: ",this.player_name);
+// }
+
+// showNumber(){
+// console.log("Jersey Number: ",this.jersey_number);
+// }
+
+// showCountry(){
+//     console.log("Country: ",this.country);
+// }
+
+// }
+
+// let PlayerInfo = new Person("MS Dhoni", 7, "INDIA")
+// console.log('PlayerInfo:', PlayerInfo)
+
+
+
+// PlayerInfo.showName();
+// PlayerInfo.showNumber();
+// PlayerInfo.showCountry();
+
+
+
+// class cat {
+//     constructor(s){
+//         this.species = s;
+//         this.legs = 4;
+//         this.furs = true;
+//     }
+// }
+
+// class tiger extends cat{
+//     constructor(s){
+//         super(s);
+
+//         this.speed = 60;
+//     }
+// }
+// let t1 = new tiger("Mammel");
+// console.log('t1:', t1);
+
+
+
+class Mystack{
+
+
+constructor(){
+
+
+
+this.length = 0
+this.stack = []
+
+}
+push(value){
+
+    this.stack.push(value)
+    this.length++
+    // return this.stack;
+    console.log(this.stack);
+
+}
+
+pop(){
+    
+    this.stack.pop()
+    this.length--
+    //return this.stack;
+    console.log(this.stack);
+
+}
+
+}
+let stack = new Mystack()
+
+stack.push(2);
+stack.push(3);
+stack.push(4);
+stack.push(5);
+stack.push(6);
+stack.push(7);
+stack.push(9);
+stack.push(10);
+// console.log('stack:', stack);
+
+
+
+
+</script>
